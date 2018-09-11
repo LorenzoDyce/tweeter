@@ -1,0 +1,26 @@
+.new-tweet {
+    border-radius: 10px;
+    background-color: rgb(194, 189, 189);
+    width: 400px;
+    margin: auto;
+    width: 90%;
+    border: 3px solid rgb(192, 192, 192);
+    padding: 10px;
+}
+
+
+#compose-tweet {
+    text-align: left;
+    border-bottom: 1px solid black;
+}
+
+
+#text-area {
+    width: 100%;
+}
+
+
+.counter {
+    position: right; 
+    float: right; 
+}
