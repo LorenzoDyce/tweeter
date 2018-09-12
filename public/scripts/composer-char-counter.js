@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $('#text-area').on('input', function (event) {
+    $('.text-area').on('input', function (event) {
         var counter = 140 - $(this).val().length;
         var counterElement = $(this).siblings('.counter');
         counterElement.html(counter);

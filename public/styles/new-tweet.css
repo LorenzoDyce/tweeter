@@ -1,10 +1,10 @@
 .new-tweet {
     border-radius: 10px;
-    background-color: rgb(194, 189, 189);
+    background-color: rgb(71, 209, 243);
     width: 400px;
     margin: auto;
     width: 90%;
-    border: 3px solid rgb(192, 192, 192);
+    border: 3px solid rgb(71, 209, 243);
     padding: 10px;
 }
 
@@ -12,15 +12,67 @@
 #compose-tweet {
     text-align: left;
     border-bottom: 1px solid black;
+    
 }
 
 
-#text-area {
+.text-area {
     width: 100%;
+    border-radius: 5px;
 }
 
 
 .counter {
     position: right; 
     float: right; 
+}
+
+.tweet {
+    border-radius: 10px;
+    background-color:  rgb(71, 209, 243);;
+    width: 400px;
+    margin-top: 60px;
+    margin-left: 20px;
+    width: 90%;
+    border: 3px solid  rgb(71, 209, 243);;
+    padding: 10px;  
+}
+
+article.tweet header {
+    background-color: lightblue;
+    text-align: left;
+    
+}
+
+article.tweet p {
+  padding-top: 100px;
+  background-color: rgb(255, 255, 255);
+  
+}
+
+
+article.tweet footer {
+    background-color: rgb(255, 255, 255);
+    text-align: left;
+    border-top: 1px solid rgb(146, 146, 146);
+}
+
+
+
+#submit-button {
+border-radius: 5px;
+box-shadow: 1px 1px 1px 1px;  
+}
+
+h3 {
+    float: right;
+}
+.profile-pic {
+border-radius: 10px;
+left: 500px;
+  
+}
+h4 {
+    float: left;
+    left: 80px;
 }

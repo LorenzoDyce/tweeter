@@ -39,11 +39,22 @@
         <section class="new-tweet">
             <h2 id="compose-tweet">Compose Tweet</h2>
             <form action="/tweets"method="POST">
-              <textarea id="text-area" name="text" placeholder="What are you humming about?"></textarea>
-              <input type="submit" value="Tweet">
+              <textarea class="text-area" name="text" placeholder="What are you humming about?"></textarea>
+              <input class="submit-button" type="submit" value="Tweet">
               <span class="counter">140</span>
             </form>
           </section>
+        <div class="tweet-container"> </div>
+        <article class="tweet">
+          <header> 
+            
+            <img class="profile-pic" src="https://via.placeholder.com/50x50"> 
+            <h4>Billy Jones</h4> 
+            <h3>@billy</h3>          
+          </header>
+          <p>Hello</p>
+          <footer>tweet tweet more</footer>
+        </article>
     </main>
   <script src="scripts/composer-char-counter.js"></script>
   </body>
