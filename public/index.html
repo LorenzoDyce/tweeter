@@ -1,61 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Meta Information -->
-    <title>Tweeter - Home Page</title>
 
-    <!-- External CSS -->
-    <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
+<head>
+  <!-- Meta Information -->
+  <title>Tweeter - Home Page</title>
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,700,700i" rel="stylesheet">
+  <!-- External CSS -->
+  <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
 
-    <!-- App CSS -->
-    <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,700,700i" rel="stylesheet">
 
-    <!-- Nav bar -->
-    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
 
-    <!-- New tweet bar -->
-    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+  <!-- App CSS -->
+  <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
 
-    <!-- External JS -->
-    <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
+  <!-- Nav bar -->
+  <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
 
-    <!-- App JS -->
-    <script type="text/javascript" src="/scripts/app.js"></script>
-  </head>
+  <!-- New tweet bar -->
+  <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
 
-  <body>
+  <!-- External JS -->
+  <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
 
-    <!-- Top nav bar (fixed) -->
-    <nav id="nav-bar">
-      <img class="logo" src="/images/bird.png" width="80px" height="80px">
-      <span class="header">Tweeter</span>
-    </nav>
+  <!-- App JS -->
+  <script type="text/javascript" src="/scripts/app.js"></script>
+</head>
 
-    <!-- Page-specific (main) content here -->
-    <main class="container">  
-        <section class="new-tweet">
-            <h2 id="compose-tweet">Compose Tweet</h2>
-            <form action="/tweets"method="POST">
-              <textarea class="text-area" name="text" placeholder="What are you humming about?"></textarea>
-              <input class="submit-button" type="submit" value="Tweet">
-              <span class="counter">140</span>
-            </form>
-          </section>
-        <div class="tweet-container"> </div>
-        <article class="tweet">
-          <header> 
-            
-            <img class="profile-pic" src="https://via.placeholder.com/50x50"> 
-            <h4>Billy Jones</h4> 
-            <h3>@billy</h3>          
-          </header>
-          <p>Hello</p>
-          <footer>tweet tweet more</footer>
-        </article>
-    </main>
+<body>
+
+  <!-- Top nav bar (fixed) -->
+  <nav id="nav-bar">
+    <img class="logo" src="/images/bird.png" width="80px" height="80px">
+    <span class="header">Tweeter</span>
+  </nav>
+
+  <!-- Page-specific (main) content here -->
+  <main class="container">
+    <section class="new-tweet">
+      <h2 class="compose-tweet">Compose Tweet</h2>
+      <form action="/tweets" method="POST">
+        <textarea class="text-area" name="text" placeholder="What are you humming about?"></textarea>
+        <input class="submit-button" type="submit" value="Tweet">
+        <span class="counter">140</span>
+      </form>
+    </section>
+    <div class="tweet-container"> </div>
+    <article class="tweet">
+      <header>
+
+        <img class="profile-pic" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHqSURBVGhD7dkxSJRxGMfxy0KpFJdmN5eGiJZCyE0R1zbbFIxaGkVwqKmhIYxSBEUQRVLanFUQnIKiaGhMBDEUS6yh1Po+23H8eO/9310+D/h+4bO+/N7h7t7/e6WioiKXmtCFxxjHLCYwglsIn93AQ2zhb4Y5XETIrmAFarjyBS/RgVBNQw2u5gC3EaKbOIUamsdXXIZ7z6AGprgP995DjUvxGu7tQ41LsQr3TqDGpdiAaxfwB2pcinW4twM1LsUC3HsHNS7FE7g3AzUuRQ/cewA1Lq/fuAr3BqEG5vUN7XBvF2pgijG49xNqXIrncG8NalyKe3CvH8dQA/P4jGaEqBdqZDUf0IowXcIR1NgsLxAue8mgxma5g3DdQMpnZRNhewo1utIh7Igcuh9Q48tNInzfocaXsxd24fsFNb7cFEJnbxDV8EohDlJZ2btdNbzSJ9gxOWTX8BFquGLvw0LdjI0ZgJ0r1OAs9sDZCdfsVGenQ3voUyPzsh/RZdzFmXYdr5DnazaVfXYeoQ3/LXsEeYt6XljntYdRNPSGWmD/ZTTijWKqbfSh7uwPnEacAOthn6Eh1NUi1MXPmt1MzV8G3VAX9WK/UTX97sxDXdBTTQcx+6Cpi3myb7Kk7OHvDZaCGUZRUdH5rFT6B+P23EHakSh+AAAAAElFTkSuQmCC">
+        <h4 class="real-name"> Billy Jones</h4>
+        <h3 class="at-name">@billy</h3>
+      </header>
+      <p class="posted-tweet">Hello</p>
+      <footer>
+        <div class="icons">
+          <i class="fab fa-font-awesome-flag"></i>
+
+          <i class="fas fa-retweet"></i>
+
+          <i class="fas fa-heart"></i>
+        </div>
+
+      </footer>
+    </article>
+  </main>
   <script src="scripts/composer-char-counter.js"></script>
-  </body>
+</body>
+
 </html>
