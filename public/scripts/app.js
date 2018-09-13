@@ -115,12 +115,18 @@ $(document).ready(function () {
         event.preventDefault();
         let $ta = $(this).find('.text-area');
         let $message = $ta.val();
+        let errorMsg;
         if ($message === "") {
-            alert('Please enter a message');
+            // $( ".empty-error" ).show().slideDown( "slow", function() {
+            //   });
+            errorMsg = 'Please enter a message';
+            $( ".error" ).text(errorMsg).slideDown( "slow");
         } else if ($message.length > 140) {
-            alert('Please enter 140 characters or less');
+            // $( ".character-limit-error" ).show().slideDown( "slow", function() {
+            //   });
+            errorMsg = 'Please enter 140 characters or less';
+            $( ".error" ).text(errorMsg).slideDown( "slow");
         } else {
-            console.log('sending', $(this).serialize(), this)
             $.ajax({
                     url: '/tweets',
                     method: 'POST',
@@ -128,6 +134,7 @@ $(document).ready(function () {
                 })
                 .then(function () {
                     loadTweets();
+                    $( ".error" ).text("").slideDown( "up");
                 });
         }
     });

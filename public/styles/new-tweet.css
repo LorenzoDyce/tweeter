@@ -121,10 +121,23 @@ article.tweet footer {
 
 
 .new-tweet {
-display: none;
+    display: none;
 }
 
 
 .active {
-display: block;
+    display: block;
+}
+
+
+.empty-error {
+    color: red;
+    display: none;
+}
+
+
+.character-limit-error {
+    color: red;
+    display: none;
+   background-color: white 
 }
