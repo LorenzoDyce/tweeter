@@ -46,20 +46,12 @@ article.tweet header {
 
 }
 
-/* article.tweet p {
-  padding-top: 60px;
-  background-color: rgb(255, 255, 255);
-  margin-left: -10px;
-  margin-right: -10px
-  
-} */
-
 
 article.tweet footer {
     background-color: rgb(255, 255, 255);
     text-align: left;
     border-radius: 0px 0px 10px 10px;
-    border-top: 1px solid rgb(146, 146, 146);
+    border-top: 1px solid rgb(239, 237, 237);
     padding-bottom: 30px;
     margin-left: -10px;
     margin-right: -10px;
@@ -79,9 +71,6 @@ article.tweet footer {
     visibility: visible;
 }
 
-.icons {
-    visibility: hidden;
-}
 
 .submit-button {
     border-radius: 5px;
@@ -95,7 +84,7 @@ article.tweet footer {
     margin-right: -10px
 }
 
-.at-name {
+.handle {
     float: right;
 }
 
@@ -116,4 +105,26 @@ article.tweet footer {
     float: right;
     color: black;
     margin-right: 10px;
+    margin-top: 6px;
+    visibility: hidden;
+}
+
+
+#load-more-tweets {
+    width: 20%;
+    margin-left: 40%;
+    margin-right: 50%;
+    background-color: #00a087;
+    color: white;
+    border-radius: 7px;
+}
+
+
+.new-tweet {
+display: none;
+}
+
+
+.active {
+display: block;
 }

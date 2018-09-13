@@ -37,39 +37,23 @@
   <nav id="nav-bar">
     <img class="logo" src="/images/bird.png" width="80px" height="80px">
     <span class="header">Tweeter</span>
+    <button class="togglebtn"><i class="far fa-edit">compose</i></button>
   </nav>
 
   <!-- Page-specific (main) content here -->
   <main class="container">
     <section class="new-tweet">
       <h2 class="compose-tweet">Compose Tweet</h2>
-      <form action="/tweets" method="POST">
+      <form>
         <textarea class="text-area" name="text" placeholder="What are you humming about?"></textarea>
         <input class="submit-button" type="submit" value="Tweet">
         <span class="counter">140</span>
       </form>
     </section>
-    <div class="tweet-container"> </div>
-    <article class="tweet">
-      <header>
-
-        <img class="profile-pic" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHqSURBVGhD7dkxSJRxGMfxy0KpFJdmN5eGiJZCyE0R1zbbFIxaGkVwqKmhIYxSBEUQRVLanFUQnIKiaGhMBDEUS6yh1Po+23H8eO/9310+D/h+4bO+/N7h7t7/e6WioiKXmtCFxxjHLCYwglsIn93AQ2zhb4Y5XETIrmAFarjyBS/RgVBNQw2u5gC3EaKbOIUamsdXXIZ7z6AGprgP995DjUvxGu7tQ41LsQr3TqDGpdiAaxfwB2pcinW4twM1LsUC3HsHNS7FE7g3AzUuRQ/cewA1Lq/fuAr3BqEG5vUN7XBvF2pgijG49xNqXIrncG8NalyKe3CvH8dQA/P4jGaEqBdqZDUf0IowXcIR1NgsLxAue8mgxma5g3DdQMpnZRNhewo1utIh7Igcuh9Q48tNInzfocaXsxd24fsFNb7cFEJnbxDV8EohDlJZ2btdNbzSJ9gxOWTX8BFquGLvw0LdjI0ZgJ0r1OAs9sDZCdfsVGenQ3voUyPzsh/RZdzFmXYdr5DnazaVfXYeoQ3/LXsEeYt6XljntYdRNPSGWmD/ZTTijWKqbfSh7uwPnEacAOthn6Eh1NUi1MXPmt1MzV8G3VAX9WK/UTX97sxDXdBTTQcx+6Cpi3myb7Kk7OHvDZaCGUZRUdH5rFT6B+P23EHakSh+AAAAAElFTkSuQmCC">
-        <h4 class="real-name"> Billy Jones</h4>
-        <h3 class="at-name">@billy</h3>
-      </header>
-      <p class="posted-tweet">Hello</p>
-      <footer>
-        <div class="icons">
-          <i class="fab fa-font-awesome-flag"></i>
-
-          <i class="fas fa-retweet"></i>
-
-          <i class="fas fa-heart"></i>
-        </div>
-
-      </footer>
-    </article>
+    <div id="tweet-container">
+    </div>
   </main>
+  <button id="load-more-tweets">Load more tweets</button>
   <script src="scripts/composer-char-counter.js"></script>
 </body>
 
