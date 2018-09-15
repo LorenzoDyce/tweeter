@@ -57,13 +57,12 @@ function renderTweets(tweets) {
     $( "#tweet-container" ).empty();
     for (let i = 0; i < tweets.length; i++) {
 
-
         var $tweet = createTweetElement(tweets[i]);
 
         $('#tweet-container').prepend($tweet);
     }
 }
-
+// loads all tweets from database
 function loadTweets() {
     $.ajax({
         url: '/tweets',
@@ -102,7 +101,6 @@ function createTweetElement(tweet) {
     return $article;
 }
 $(document).ready(function () {
-
    $('.togglebtn').on('click', function(event) {
         $('.new-tweet').toggleClass('active');
         });
@@ -117,13 +115,10 @@ $(document).ready(function () {
         let $message = $ta.val();
         let errorMsg;
         if ($message === "") {
-            // $( ".empty-error" ).show().slideDown( "slow", function() {
-            //   });
             errorMsg = 'Please enter a message';
             $( ".error" ).text(errorMsg).slideDown( "slow");
         } else if ($message.length > 140) {
-            // $( ".character-limit-error" ).show().slideDown( "slow", function() {
-            //   });
+    
             errorMsg = 'Please enter 140 characters or less';
             $( ".error" ).text(errorMsg).slideDown( "slow");
         } else {
